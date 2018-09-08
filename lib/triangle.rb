@@ -1,9 +1,3 @@
-  class TriangleError < StandardError
-    def message
-      "That is not a valid triangle"
-    end
-  end
-  
   class Triangle
   attr_accessor :a_size,  :b_size, :c_size
   
@@ -32,5 +26,10 @@
     end
   end
   
+  class TriangleError < StandardError
+    def message
+      "That is not a valid triangle"
+    end
+  end
 
 end
