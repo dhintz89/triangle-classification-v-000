@@ -18,3 +18,6 @@ class Triangle
     end
   end
 end
+
+tri = Triangle.new(1,2,1)
+tri.kind
