@@ -29,5 +29,3 @@
   end
 
 end
-
-Triangle.new(7,3,2).kind
