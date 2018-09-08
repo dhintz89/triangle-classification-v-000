@@ -9,6 +9,7 @@ class Triangle
   
   def kind
     dimensions = [@a_size, @b_size, @c_size]
+    if @a_size + @b_size < @c_size
     if dimensions.uniq.length == 1 
       :equilateral
     elsif dimensions.uniq.length == 2
