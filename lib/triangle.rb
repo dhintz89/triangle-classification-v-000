@@ -15,15 +15,14 @@ class Triangle
       rescue TriangleError => error
         puts error.message
       end
-      
-      
-
-    if dimensions.uniq.length == 1 
-      :equilateral
-    elsif dimensions.uniq.length == 2
-      :isosceles
     else
-      :scalene
+      if dimensions.uniq.length == 1 
+        :equilateral
+      elsif dimensions.uniq.length == 2
+        :isosceles
+      else
+        :scalene
+      end
     end
   end
 end
