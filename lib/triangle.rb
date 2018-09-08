@@ -1,4 +1,10 @@
-class Triangle
+  class TriangleError < StandardError
+    def message
+      "That is not a valid triangle"
+    end
+  end
+  
+  class Triangle
   attr_accessor :a_size,  :b_size, :c_size
   
   def initialize(a, b, c)
@@ -26,10 +32,5 @@ class Triangle
     end
   end
   
-  class TriangleError < StandardError
-    def message
-      "That is not a valid triangle"
-    end
-  end
-  
+
 end
