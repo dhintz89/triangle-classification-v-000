@@ -10,7 +10,9 @@ class Triangle
   def kind
     dimensions = [@a_size, @b_size, @c_size]
     if @a_size + @b_size < @c_size || @a_size + @c_size < @b_size || @b_size + @c_size < @a_size || dimensions.any? {|i| i <= 0}
-      
+      begin
+        raise TriangleError
+        
       
       
 
